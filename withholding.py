@@ -1,7 +1,5 @@
-print('Enter distribution amount:')
-amount = float(input())
-print('Enter witholding % amount:')
-withholding = float(input()) / 100
+amount = float(input('Enter distribution amount:'))
+withholding = float(input('Enter witholding % amount:')) / 100
 withholding_amount = round(withholding * amount , 2)
 amount_received = round(amount - withholding_amount,2)
 print(f'Total Distribution amount: ${"{:,}".format(amount)}')
